@@ -28,7 +28,11 @@ export default function About() {
             <div className={styles.social}>
               <ul>
                 <li>
-                  <a href="">
+                  <a
+                    href="https://soundcloud.com/lucaszavala"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
                     <img
                       src="/assets/images/soundcloud-d.svg"
                       alt="Soundcloud link"

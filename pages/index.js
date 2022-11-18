@@ -30,7 +30,11 @@ export default function Home() {
           <div className={styles.footer}>
             <ul>
               <li>
-                <a href="">
+                <a
+                  href="https://soundcloud.com/lucaszavala"
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   <img
                     src="/assets/images/soundcloud.svg"
                     alt="Soundcloud link"

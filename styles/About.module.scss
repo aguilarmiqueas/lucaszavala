@@ -56,6 +56,11 @@
     width: 26px;
     height: 26px;
   }
+
+  li:nth-child(1) {
+    width: 33px;
+    height: 15px;
+  }
 }
 
 @media (min-width: 768px) {
