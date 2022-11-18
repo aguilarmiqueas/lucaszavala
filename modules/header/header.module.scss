@@ -1,0 +1,31 @@
+@import "styles/variables.scss";
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+  &.dark {
+    color: $color-main;
+  }
+}
+
+.inner {
+  width: 100%;
+  max-width: 400px;
+  padding: calc($spacing * 2) $spacing;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .header.darkMobile {
+    color: $color-main;
+  }
+}

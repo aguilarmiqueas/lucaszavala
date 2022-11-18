@@ -1,0 +1,40 @@
+@import "styles/variables.scss";
+
+.footer {
+  width: 100%;
+  //   position: absolute;
+  //   bottom: 4rem;
+  //   left: 0;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  padding-top: 4rem;
+}
+
+.wrapper {
+  width: 50%;
+  max-width: 500px;
+  img {
+    width: 100%;
+  }
+}
+
+.img {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    margin: 0;
+  }
+  .img {
+    display: initial;
+  }
+  .imgMobile {
+    display: none;
+  }
+}
