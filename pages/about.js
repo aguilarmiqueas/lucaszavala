@@ -40,7 +40,10 @@ export default function About() {
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a
+                    href="https://instagram.com/lucas.zavala.pelli?igshid=MWI4MTIyMDE="
+                    target="_blank"
+                  >
                     <img src="/assets/images/ig-d.svg" alt="Instagram link" />
                   </a>
                 </li>

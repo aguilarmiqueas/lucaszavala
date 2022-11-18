@@ -42,7 +42,10 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a
+                  href="https://instagram.com/lucas.zavala.pelli?igshid=MWI4MTIyMDE="
+                  target="_blank"
+                >
                   <img src="/assets/images/ig.svg" alt="Instagram link" />
                 </a>
               </li>
