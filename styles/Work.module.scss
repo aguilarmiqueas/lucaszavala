@@ -38,5 +38,10 @@
 .items {
   min-height: 60vh;
   width: 100%;
-  margin-bottom: 8rem;
+}
+
+@media (min-width: 768px) {
+  .items {
+    margin-bottom: 8rem;
+  }
 }
