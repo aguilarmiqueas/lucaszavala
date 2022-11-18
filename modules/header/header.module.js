@@ -1,5 +1,6 @@
 import styles from "./header.module.scss";
 import Link from "next/link";
+import { useRouter } from "next/router";
 const items = [
   { name: "Home", uri: "/" },
   { name: "Work", uri: "/work" },
@@ -7,6 +8,7 @@ const items = [
 ];
 
 export default function Header({ dark, darkMobile }) {
+  const router = useRouter();
   return (
     <div
       className={`${styles.header} ${dark ? styles.dark : ""} ${
@@ -18,7 +20,11 @@ export default function Header({ dark, darkMobile }) {
           {items.map((item, index) => {
             return (
               <Link href={item.uri} key={index}>
-                <li>{item.name}</li>
+                <li
+                  className={router.pathname === item.uri ? styles.active : ""}
+                >
+                  {item.name}
+                </li>
               </Link>
             );
           })}
