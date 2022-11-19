@@ -2,8 +2,17 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.scss";
 import Header from "../modules/header/header.module";
+import Loader from "../modules/loader/loader.module";
+import Image from "next/image";
+import { useState, useRef } from "react";
+import { gsap } from "gsap/dist/gsap";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const [loading, setLoading] = useState(false);
+  const callback = () => setLoading(true);
+  const main = useRef();
+  const router = useRouter();
   return (
     <div className={styles.container}>
       <Head>
@@ -11,9 +20,18 @@ export default function Home() {
         <meta name="description" content="Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Loader callback={callback} />
+      <Header refe={main} />
 
-      <Header />
-      <main className={styles.home}>
+      <main className={styles.home} ref={main}>
+        <div className={`${styles.background}`}>
+          <Image
+            src={`/assets/images/background.jpg`}
+            className={loading && styles.active}
+            fill
+            alt=""
+          />
+        </div>
         <div className={styles.content}>
           <div className={styles.logoMobile}>
             <img src="/assets/images/logo-mobile.svg" alt="" />
@@ -24,9 +42,21 @@ export default function Home() {
           <p className="text-small">
             Composer, music producer and song writer.
           </p>
-          <Link href="/work">
-            <div className={styles.work}>View work</div>
-          </Link>
+
+          <div
+            className={styles.work}
+            onClick={(e) => {
+              e.preventDefault();
+              gsap.to(main.current, {
+                opacity: 0,
+                duration: 0.5,
+                ease: "pow3.inOut",
+                onComplete: () => router.push("/work"),
+              });
+            }}
+          >
+            View work
+          </div>
           <div className={styles.footer}>
             <ul>
               <li>
