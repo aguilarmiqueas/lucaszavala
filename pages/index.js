@@ -41,7 +41,10 @@ export default function Home() {
           <div className={styles.logo}>
             <img src="/assets/images/logo.svg" alt="" />
           </div>
-          <p className="text-small">Composer, music producer and songwriter.</p>
+          <p className="text-small">
+            Composer, music producer <br />
+            and songwriter.
+          </p>
 
           <div
             className={styles.work}
