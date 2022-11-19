@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.scss";
 import Header from "../modules/header/header.module";
 import Loader from "../modules/loader/loader.module";
 import Image from "next/image";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap/dist/gsap";
 import { useRouter } from "next/router";
 
@@ -13,6 +13,7 @@ export default function Home() {
   const callback = () => setLoading(true);
   const main = useRef();
   const router = useRouter();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -24,10 +25,18 @@ export default function Home() {
       <Header refe={main} />
 
       <main className={styles.home} ref={main}>
-        <div className={`${styles.background}`}>
+        <div className={styles.background}>
           <Image
             src={`/assets/images/background.jpg`}
-            className={loading && styles.active}
+            className={`${loading && styles.active} ${
+              styles.backgroundDesktop
+            }`}
+            fill
+            alt=""
+          />
+          <Image
+            src={`/assets/images/background-mobile.jpg`}
+            className={`${loading && styles.active} ${styles.backgroundMobile}`}
             fill
             alt=""
           />

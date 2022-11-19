@@ -2,10 +2,7 @@
 
 .container {
   width: 100%;
-  // background-image: url(/assets/images/background-mobile.jpg);
-  background-size: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
+
   height: 100vh;
   color: white;
   display: flex;
@@ -24,6 +21,7 @@
   justify-content: flex-end;
   align-items: center;
   height: 100%;
+  position: relative;
   z-index: 1;
   p {
     width: 50%;
@@ -93,29 +91,41 @@
   }
 }
 
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+  img {
+    transform: scale(105%);
+    transition: 1500ms transform ease-in-out;
+    transform-origin: center center;
+    object-fit: cover;
+    &.active {
+      transform: scale(100%);
+    }
+  }
+}
+
+.backgroundDesktop {
+  display: none;
+}
+
 // DESKTOP
 @media (min-width: 960px) {
   .container {
-    background-image: url("/assets/images/background.jpg");
+    // background-image: url("/assets/images/background.jpg");
   }
 
-  .background {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-    z-index: 1;
-    img {
-      transform: scale(105%);
-      transition: 1500ms transform ease-in-out;
-      transform-origin: center center;
-      object-fit: cover;
-      &.active {
-        transform: scale(100%);
-      }
-    }
+  .backgroundDesktop {
+    display: initial;
+  }
+
+  .backgroundMobile {
+    display: none;
   }
 }
 
