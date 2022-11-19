@@ -24,6 +24,9 @@
   display: flex;
   justify-content: space-between;
   transition: 200ms opacity ease-in-out;
+  li {
+    cursor: pointer;
+  }
   li.active {
     opacity: 0.7;
   }
