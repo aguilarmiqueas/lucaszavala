@@ -1,5 +1,3 @@
-import Head from "next/head";
-import Link from "next/link";
 import styles from "../styles/Home.module.scss";
 import Header from "../modules/header/header.module";
 import Loader from "../modules/loader/loader.module";
@@ -16,11 +14,6 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Lucas Zavala</title>
-        <meta name="description" content="Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Loader callback={callback} />
       <Header refe={main} />
 

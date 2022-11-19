@@ -15,12 +15,7 @@ export default function About() {
 
   return (
     <div className={styles.about}>
-      <Head>
-        <title>About - Lucas Zavala</title>
-        <meta name="description" content="About me" />
-      </Head>
       <Header darkMobile refe={main} />
-
       <main className={styles.inner} ref={main}>
         <div className={styles.wrapper}>
           <div className={styles.image} ref={image}>
