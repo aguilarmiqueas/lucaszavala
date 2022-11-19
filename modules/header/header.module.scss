@@ -26,6 +26,7 @@
   transition: 200ms opacity ease-in-out;
   li {
     cursor: pointer;
+    transition: 100ms opacity ease-in-out;
   }
   li.active {
     opacity: 0.7;

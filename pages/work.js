@@ -3,6 +3,7 @@ import Header from "../modules/header/header.module";
 import Footer from "../modules/footer/footer.module";
 import { useRef } from "react";
 import { gsap } from "gsap/dist/gsap";
+import Title from "../modules/title/title.module";
 const links = [""];
 
 export default function Work() {
@@ -14,16 +15,39 @@ export default function Work() {
         <h1>Selected Gallery</h1>
         <div className={styles.items}>
           <div className={styles.itemWrap}>
+            {" "}
+            <Title
+              title={"Tatort: Katz und Maus"}
+              subtitle={"MadeFor Film Production"}
+              url={"https://www.imdb.com/title/tt18569724/"}
+            />
+            <a href={"https://televisionale.de/preise/rolf-hans-muellerpreis"}>
+              <h3>
+                Nominated for the 2022 Rolf-Hanz Müller Prize for Film Music.
+              </h3>
+            </a>
+          </div>
+          <div className={styles.itemWrap}>
+            <Title
+              title={"Baumbacher Syndrome"}
+              subtitle={"A film by Gregory Kirchhoff"}
+              url={"https://www.imdb.com/title/tt9409448/"}
+            />
             <iframe
               width="100%"
               height="450"
               scrolling="no"
               frameborder="no"
               allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/429463346&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1529164339&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
             ></iframe>
           </div>
           <div className={styles.itemWrap}>
+            <Title
+              title={"Dusky Paradise"}
+              subtitle={"A film by Gregory Kirchhoff"}
+              url={"https://www.imdb.com/title/tt4119044/"}
+            />
             <iframe
               width="100%"
               height="450"
@@ -33,8 +57,13 @@ export default function Work() {
               src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/429463346&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
             ></iframe>
           </div>
-          <div className={styles.videos}>
-            <div className={`${styles.itemWrap} ${styles.iframeWrap}`}>
+          <div className={`${styles.videos} ${styles.itemWrap}`}>
+            <Title
+              title={"It's Your Country"}
+              subtitle={"Short documentary series by Tim Sessler."}
+              url={"https://vimeo.com/channels/itsyourcountry/videos"}
+            />
+            <div className={`${styles.iframeWrap}`}>
               <div className={styles.video}>
                 <div className={styles.vimeoWrap}>
                   <iframe
@@ -56,7 +85,7 @@ export default function Work() {
                 </div>
               </div>
             </div>
-            <div className={`${styles.itemWrap} ${styles.iframeWrap}`}>
+            <div className={`${styles.iframeWrap}`}>
               <div className={styles.video}>
                 <div className={styles.vimeoWrap}>
                   <iframe

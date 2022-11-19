@@ -11,6 +11,8 @@ const items = [
 export default function Header({ dark, darkMobile, refe }) {
   const router = useRouter();
 
+  console.log(router);
+
   return (
     <div
       className={`${styles.header} ${dark ? styles.dark : ""} ${
@@ -26,12 +28,14 @@ export default function Header({ dark, darkMobile, refe }) {
                 key={index}
                 onClick={(e) => {
                   e.preventDefault();
-                  gsap.to(refe.current, {
-                    opacity: 0,
-                    duration: 0.5,
-                    ease: "pow3.inOut",
-                    onComplete: () => router.push(items[index].uri),
-                  });
+                  if (router.pathname !== items[index].uri) {
+                    gsap.to(refe.current, {
+                      opacity: 0,
+                      duration: 0.5,
+                      ease: "pow3.inOut",
+                      onComplete: () => router.push(items[index].uri),
+                    });
+                  }
                 }}
               >
                 {item.name}

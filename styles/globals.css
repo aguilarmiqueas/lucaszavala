@@ -16,6 +16,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  transition: 75ms opacity ease-in-out;
+}
+
+a:hover {
+  opacity: 0.8;
 }
 
 * {
@@ -27,4 +32,11 @@ a {
 li {
   text-decoration: none;
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit;
 }

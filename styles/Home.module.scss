@@ -93,7 +93,7 @@
 
 .background {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   left: 0;
   top: 0;
@@ -134,4 +134,8 @@
   border-radius: 50px;
   padding: 12px 36px;
   cursor: pointer;
+  transition: 75ms opacity ease-in-out;
+  &:hover {
+    opacity: 0.8;
+  }
 }

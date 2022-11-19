@@ -13,9 +13,22 @@
   h1 {
     font-weight: 400;
     font-size: 24px;
-    letter-spacing: -4.5%;
+    letter-spacing: -1px;
     text-align: center;
-    width: 30%;
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8c8c8c;
+    margin-left: calc(20px + 8px + 16px);
+    margin-right: 44px;
+    letter-spacing: -1px;
+    transition: 75ms opacity ease-in-out;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 
@@ -29,9 +42,14 @@
 
 .itemWrap {
   width: 100%;
-  margin: 4rem 0;
+
+  padding: 2rem 0 3rem;
+  border-bottom: 1px solid #8c8c8c;
   iframe {
-    object-fit: contain;
+    margin-top: 2rem;
+  }
+  &:last-child {
+    border: none;
   }
 }
 
@@ -69,13 +87,28 @@
   }
   .iframeWrap {
     flex-direction: row;
+    justify-content: space-between;
   }
   .videos {
-    margin: 0 -1rem;
     margin-bottom: 4rem;
   }
   .video {
-    width: 50%;
-    padding: 1rem;
+    width: 49%;
+    iframe {
+      margin-top: 1rem;
+    }
+  }
+  .work {
+    padding-top: 12rem;
+    h1 {
+      font-size: 45px;
+      width: 50%;
+      margin-bottom: 4rem;
+    }
+    h3 {
+      font-size: 20px;
+      margin-left: calc(28px + 8px);
+      padding: 0;
+    }
   }
 }
