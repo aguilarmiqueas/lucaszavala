@@ -12,7 +12,6 @@ export default function Work() {
     <div className={styles.work}>
       <Header dark refe={main} />
       <div className={styles.wrapper} ref={main}>
-        <h1>Selected Gallery</h1>
         <div className={styles.items}>
           <div className={styles.itemWrap}>
             {" "}
@@ -39,7 +38,7 @@ export default function Work() {
               scrolling="no"
               frameborder="no"
               allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1529164339&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1529164339&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
             ></iframe>
           </div>
           <div className={styles.itemWrap}>
@@ -54,7 +53,7 @@ export default function Work() {
               scrolling="no"
               frameborder="no"
               allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/429463346&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/429463346&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
             ></iframe>
           </div>
           <div className={`${styles.videos} ${styles.itemWrap}`}>
