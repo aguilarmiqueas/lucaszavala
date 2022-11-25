@@ -10,9 +10,6 @@ const items = [
 
 export default function Header({ dark, darkMobile, refe }) {
   const router = useRouter();
-
-  console.log(router);
-
   return (
     <div
       className={`${styles.header} ${dark ? styles.dark : ""} ${
