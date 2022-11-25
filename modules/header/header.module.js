@@ -1,6 +1,5 @@
 import styles from "./header.module.scss";
 import gsap from "gsap";
-import Link from "next/link";
 import { useRouter } from "next/router";
 const items = [
   { name: "Home", uri: "/" },

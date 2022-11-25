@@ -1,20 +1,20 @@
 @import "styles/variables.scss";
 
 .footer {
-  width: 100%;
-  //   position: absolute;
   //   bottom: 4rem;
   //   left: 0;
-  margin-bottom: 4rem;
+  //   position: absolute;
   display: flex;
   justify-content: center;
+  margin-bottom: 4rem;
   margin-top: auto;
   padding-top: 4rem;
+  width: 100%;
 }
 
 .wrapper {
-  width: 50%;
   max-width: 500px;
+  width: 50%;
   img {
     width: 100%;
   }
@@ -26,10 +26,10 @@
 
 @media (min-width: 768px) {
   .footer {
-    position: absolute;
     bottom: 4rem;
     left: 0;
     margin: 0;
+    position: absolute;
   }
   .img {
     display: initial;

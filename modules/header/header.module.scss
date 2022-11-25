@@ -1,23 +1,23 @@
 @import "styles/variables.scss";
 
 .header {
-  width: 100%;
+  color: white;
   display: flex;
   justify-content: center;
-  position: absolute;
   left: 0;
+  position: absolute;
   top: 0;
+  width: 100%;
   z-index: 2;
-  color: white;
   &.dark {
     color: $color-main;
   }
 }
 
 .inner {
-  width: 100%;
   max-width: 400px;
   padding: calc($spacing * 2) $spacing;
+  width: 100%;
 }
 
 .items {

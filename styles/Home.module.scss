@@ -1,12 +1,11 @@
 @import "styles/variables.scss";
 
 .container {
-  width: 100%;
-
-  height: 100vh;
   color: white;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  width: 100%;
   z-index: 100;
 }
 
@@ -16,19 +15,19 @@
 }
 
 .content {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
   height: 100%;
+  justify-content: flex-end;
   position: relative;
   z-index: 1;
   p {
-    width: 100%;
-    text-align: center;
-    margin: 1.5rem 0;
     font-size: 13px;
     line-height: 16px;
+    margin: 1.5rem 0;
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -38,9 +37,9 @@
 
 .logo,
 .logoMobile {
-  width: 100%;
   max-width: 1100px;
   padding: 0 4rem;
+  width: 100%;
   img {
     width: 100%;
   }
@@ -49,8 +48,8 @@
 .footer {
   margin: 3rem 0 4rem;
   ul {
-    display: flex;
     align-items: center;
+    display: flex;
   }
   li {
     margin: 0 0.5rem;
@@ -67,8 +66,8 @@
   }
   .content {
     padding-bottom: 8rem;
-    z-index: 10;
     position: relative;
+    z-index: 10;
     p {
       font-size: 16px;
       line-height: 22px;
@@ -76,10 +75,10 @@
     }
   }
   .footer {
-    position: absolute;
-    right: 2rem;
     bottom: 4rem;
     margin: 0;
+    position: absolute;
+    right: 2rem;
     ul {
       flex-direction: column;
     }
@@ -90,18 +89,18 @@
 }
 
 .background {
-  width: 100%;
   height: 100vh;
-  position: absolute;
   left: 0;
-  top: 0;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
   z-index: 1;
   img {
+    object-fit: cover;
+    transform-origin: center center;
     transform: scale(105%);
     transition: 1500ms transform ease-in-out;
-    transform-origin: center center;
-    object-fit: cover;
     &.active {
       transform: scale(100%);
     }
@@ -128,10 +127,10 @@
 }
 
 .work {
-  border: 1px solid white;
   border-radius: 50px;
-  padding: 12px 36px;
+  border: 1px solid white;
   cursor: pointer;
+  padding: 12px 36px;
   transition: 75ms opacity ease-in-out;
   &:hover {
     opacity: 0.8;

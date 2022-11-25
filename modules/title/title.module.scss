@@ -1,15 +1,15 @@
 @import "styles/variables.scss";
 
 .title {
-  display: flex;
   align-items: center;
+  cursor: pointer;
+  display: flex;
   font-size: 16px;
-  line-height: 24.2px;
   letter-spacing: -0.5px;
+  line-height: 24.2px;
+  margin: 0.25rem 0;
   padding-left: 1rem;
   padding-right: 44px;
-  margin: 0.25rem 0;
-  cursor: pointer;
   transition: 75ms opacity ease-in-out;
   img {
     margin-right: 0.5rem;
@@ -19,8 +19,8 @@
   h2 {
     font-weight: 600;
     span {
-      font-weight: 400;
       display: inline;
+      font-weight: 400;
     }
   }
   &:hover {
@@ -30,8 +30,8 @@
 
 @media (min-width: 768px) {
   .title {
-    padding: 0;
     font-size: 20px;
+    padding: 0;
     img {
       width: 28px;
     }
